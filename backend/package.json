@@ -7,7 +7,11 @@
         "start": "cross-env NODE_ENV=production node index.js",
         "dev": "cross-env NODE_ENV=development nodemon index.js",
         "test": "cross-env NODE_ENV=test jest --verbose --runInBand",
-        "deploy": "git push heroku master",
+        "build": "@powershell if (Test-Path build) {Remove-Item -Recurse -Force build} && cd ../frontend && npm run build && @powershell Copy-Item build -Recurse ../backend",
+        "build:linux": "rm -rf build && cd ../frontend && npm run build && cp -r build ../backend",
+        "build:prod": "npm run build && npm run start",
+        "deploy:flyio": "npm run build && fly deploy",
+        "deploy:heroku": "git push heroku master",
         "logs:prod": "heroku logs --tail",
         "lint": "eslint ."
     },
