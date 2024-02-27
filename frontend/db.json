@@ -1,0 +1,58 @@
+{
+	"journals": [
+		{
+			"id": 1,
+			"date": "2020-03-16",
+			"todos": [
+				{
+					"id": 1,
+					"task": "Learn React for two hours",
+					"done": true
+				},
+				{
+					"id": 2,
+					"task": "Practice skating for one hour",
+					"done": false
+				}
+			],
+			"reflection": "Today is good.",
+			"book_summaries": [
+				{
+					"id": 1,
+					"title": "Catch-22",
+					"chapter": "The Texan",
+					"content": "This chapter is very interesting"
+				}
+			],
+			"words_of_today": [
+				{
+					"id": 1,
+					"word": "Epiphany",
+					"definition": "A suddent moment of insight or realization."
+				}
+			]
+		},
+		{
+			"id": 2,
+			"date": "2020-03-17",
+			"todos": [
+				{
+					"id": 1,
+					"task": "Meditate for 5 minutes",
+					"done": true
+				}
+			],
+			"reflection": "Today is amazing.",
+			"book_summaries": [
+				{
+					"id": 1,
+					"title": "The Selfish Gene",
+					"chapter": "10",
+					"content": "This chapter is so insightful."
+				}
+			],
+			"words_of_today": [
+			]
+		}
+	]
+}
