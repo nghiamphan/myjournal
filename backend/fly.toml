@@ -1,0 +1,25 @@
+# fly.toml app configuration file generated for myjournal on 2024-02-27T14:46:01-04:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = 'myjournal'
+primary_region = 'yyz'
+
+[env]
+  PORT = "3000"
+
+[build]
+
+[http_service]
+  internal_port = 3000
+  force_https = true
+  auto_stop_machines = true
+  auto_start_machines = true
+  min_machines_running = 0
+  processes = ['app']
+
+[[vm]]
+  memory = '1gb'
+  cpu_kind = 'shared'
+  cpus = 1
