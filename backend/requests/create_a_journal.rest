@@ -1,0 +1,29 @@
+POST http://localhost:3001/api/journals
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvb3QiLCJpZCI6IjVlOTg2MjIxZmYxMjhjMTYzMDQ4NzRhYyIsImlhdCI6MTU4NzA1MjI1Nn0.ktPF_vyoilV5Qh__aTnYcldQX1SNPLGYM8hIQt_iL6k
+
+{
+	"date": "2020-04-12",
+	"todos": [
+		{
+			"id": 1,
+			"task": "Learn React for two hours",
+			"done": true
+		},
+		{
+			"id": 2,
+			"task": "Practice skating for one hour",
+			"done": true
+		}
+	],
+	"reflection": "Today is good.",
+	"book_summaries": [
+		{
+			"id": 1,
+			"title": "Catch-22",
+			"chapter": "The Texan",
+			"content": "This chapter is very interesting. This chapter is very interesting. This chapter is very interesting. This chapter is very interesting. This chapter is very interesting."
+		}
+	],
+	"words_of_today": []
+}

@@ -1,0 +1,7 @@
+POST http://localhost:3001/api/monthlies
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvb3QiLCJpZCI6IjVlYWM0NWRjNTEwZWM4M2NiYzdiNmNhYSIsImlhdCI6MTU4ODM1MTIxM30.UmipY2VRe3yeFc_HMAWvDKI5t1UgiEcMp1dja7oGxXw
+
+{
+	"content": "This month was good."
+}
